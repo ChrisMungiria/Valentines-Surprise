@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 205, 190);
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(255, 205, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        height: 1vh;
+        opacity: 0;
+    }
+
+    100% {
+        height: 10vh;
+        opacity: 1;
+    }
+}
+
+.welcome {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+}
+
+.button {
+    display: flex;
+    position: relative;
+    height: 20vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.myButton {
+    height: 50px;
+    width: 150px;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgb(255, 120, 79);
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgb(169, 36, 26);
+    transition: all 0.4s ease-in-out;
+}
+
+.myButton:hover {
+    cursor: pointer;
+    background-color: rgb(255, 120, 79);
+    box-shadow: 0px 0px 0px rgb(169, 36, 26);
+    transform: translateY(10px);
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
